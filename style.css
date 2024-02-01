@@ -7,12 +7,19 @@ li {
 }
 
 .container {
-  margin: 10px;
+  margin: auto;
   padding: 10px;
   display: flex;
   flex-direction: column;
   border: solid black;
   border-radius: 30px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .star {
