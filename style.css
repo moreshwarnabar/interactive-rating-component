@@ -16,6 +16,13 @@ li {
   border-radius: 50%;
 }
 
+button {
+  padding: 10px 6px;
+  font-size: 25px;
+  font-variant-caps: all-small-caps;
+  border-radius: 35px;
+}
+
 .container {
   margin: auto;
   padding: 20px;
