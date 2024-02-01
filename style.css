@@ -34,8 +34,11 @@ li {
 button {
   padding: 10px 6px;
   font-size: 25px;
+  font-weight: 450;
   font-variant-caps: all-small-caps;
   border-radius: 35px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
 }
 
 .container {
