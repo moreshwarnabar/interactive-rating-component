@@ -17,6 +17,7 @@ p {
 }
 
 ul {
+  margin: 25px 5px;
   padding: 0;
   display: flex;
   justify-content: space-between;
