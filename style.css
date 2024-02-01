@@ -60,7 +60,11 @@ button {
   max-width: 375px;
   border: none;
   border-radius: 30px;
-  background-color: hsl(213, 19%, 18%);
+  background: radial-gradient(
+    circle at top,
+    hsl(213, 19%, 19%) 0%,
+    hsl(213, 19%, 14%) 100%
+  );
 }
 
 .center {
