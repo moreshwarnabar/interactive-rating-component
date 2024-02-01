@@ -1,6 +1,9 @@
 li {
   display: inline-block;
   margin: 0 10px;
+  padding: 10px;
+  border: solid black;
+  border-radius: 50%;
 }
 
 .container {
@@ -10,4 +13,8 @@ li {
   flex-direction: column;
   border: solid black;
   border-radius: 30px;
+}
+
+.star {
+  padding: 10px;
 }
