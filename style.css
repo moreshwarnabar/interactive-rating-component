@@ -40,6 +40,7 @@ li {
   border-radius: 50%;
   background-color: hsl(216, 15%, 22%);
   color: hsl(217, 12%, 63%);
+  cursor: pointer;
 }
 
 button {
@@ -51,6 +52,7 @@ button {
   border-radius: 35px;
   color: hsl(0, 0%, 100%);
   background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
 }
 
 .container {
