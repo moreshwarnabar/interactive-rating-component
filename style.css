@@ -2,6 +2,12 @@
   font-family: "Overpass";
 }
 
+svg {
+  border: solid;
+  border-radius: 50%;
+  padding: 10px;
+}
+
 ul {
   padding: 0;
   display: flex;
