@@ -66,6 +66,7 @@ button:hover {
 }
 
 .container {
+  min-width: 300px;
   margin: auto;
   padding: 25px;
   display: flex;
