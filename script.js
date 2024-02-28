@@ -1,24 +1,42 @@
 // globals
 let rating = 0;
 
-// event handlers
-function handleLiClick() {
-  rating = this.textContent;
-}
-
-function handleSubmit() {
-  const message = `You selected ${rating} of 5 Thank you! We appreciate you taking
-  the time to give a rating. If you ever need more support, don’t hesitate to
-  get in touch!`;
-  console.log(message);
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector("button");
   const liList = document.querySelectorAll("li");
+  const ratingDiv = document.querySelector("#rating");
+  const thankYouDiv = document.querySelector("#thank-you");
+  const ratingMessage = document.querySelector("#rating-message");
+
+  // hide the thank you div initially
+  ratingDiv.style.display = "none";
+
+  // disable the submit button
+  button.disabled = true;
+
+  // event handlers
+  function handleClick() {
+    // change background color of li
+    this.style.backgroundColor = "hsl(217, 12%, 63%)";
+    this.style.color = "hsl(0, 0%, 100%)";
+
+    // set the rating message
+    rating = this.textContent;
+    ratingMessage.textContent = `You selected ${rating} of 5`;
+
+    // enable the submit button
+    button.disabled = false;
+    console.log(rating);
+  }
+
+  function handleSubmit() {
+    // show the thank you div and hide the rating div
+    thankYouDiv.style.display = "flex";
+    ratingDiv.style.display = "none";
+  }
 
   liList.forEach((li) => {
-    li.addEventListener("click", handleLiClick);
+    li.addEventListener("click", handleClick);
   });
   button.addEventListener("click", handleSubmit);
 });

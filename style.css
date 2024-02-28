@@ -90,3 +90,24 @@ button:hover {
 .star {
   padding: 10px;
 }
+
+#thank-you {
+  align-items: center;
+  padding: 30px 25px;
+}
+
+#thank-you svg {
+  background-color: transparent;
+}
+
+#rating-message {
+  margin: 16px 0 0 0;
+  padding: 6px 18px;
+  background-color: hsl(216, 15%, 22%);
+  border-radius: 16px;
+  color: hsl(25, 97%, 53%);
+}
+
+.final-message {
+  text-align: center;
+}
