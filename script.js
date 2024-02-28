@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const ratingMessage = document.querySelector("#rating-message");
 
   // hide the thank you div initially
-  ratingDiv.style.display = "none";
+  thankYouDiv.style.display = "none";
 
   // disable the submit button
   button.disabled = true;
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // set the rating message
     rating = this.textContent;
-    ratingMessage.textContent = `You selected ${rating} of 5`;
+    ratingMessage.textContent = `You selected ${rating} out of 5`;
 
     // enable the submit button
     button.disabled = false;
